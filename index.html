@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <!--Particles Background-->
+    <div id="particles-js"></div>
+
+    <!--Header MENU-->
+    <div class="header_container">
+        <header>
+            <div class="logo">
+                <a href="#">Cris</a>
+            </div>
+            <nav id="nav" >
+                <ul>
+                    <li><a href="#home" onclick="select()">Home</a></li>
+                    <li><a href="#aboutme" onclick="select()">About me</a></li>
+                    <li><a href="#skills" onclick="select()">Skills</a></li>
+                    <li><a href="#portfolio" onclick="select()">Projects</a></li>
+                    <li><a href="#recommendations" onclick="select()">Recomendations</a></li>
+                    <li><a href="#contact" onclick="select()">Contact me</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="show_hideMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    
+    <!--Home Section-->
+    <section id="home" class="home">
+        <div class="banner-content">
+            <div class="img-container">
+                <img id="profile-img" src="images/hua_cheng.jpg" alt="Hua Cheng">
+            </div>
+            <h1>CRISTIAN VELASQUEZ</h1>
+            <h2>Software Developer and Mechatronics Engineer</h2>
+            <div class="networks">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <!--About me-->
+    <section id="aboutme" class="aboutme">
+        <div class="content-section">        
+            <div class="row">
+                <!--Who am I?-->
+                <div class="column">
+                    <h2><span>Hi, I'm Cristian Velasquez</span></h2>
+                    <p>
+                    I'm Junior Full Stack Software Developer and Mechatronic Engineer 
+                    actually based in Colombia. <br>
+                    I've developed several projects in robotics, 
+                    home automation, IoT, and programming and more during 
+                    my career at the University.  
+                    </p> <br>
+                </div>
+                <!--Interests-->
+                <div class="column">
+                    <h3>Interests</h3>
+                    <div class="interests-container">
+                        <div class="interest">
+                            <i class="fa-solid fa-music"></i>
+                            <span>Music</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-language"></i>
+                            <span>Languages</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Travel</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-tree"></i>
+                            <span>Nature</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-campground"></i>
+                            <span>Campground</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Books</span>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Downdload CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!--Skills-->
+    <section class="skills" id="skills">
+        <div class="content-section">
+            <h2>Skills</h2>
+            <div class="row">
+                <!--Tchnical Skills-->
+                <div class="column">
+                    <div class="labels-menu">
+                        <p data-target="#soft-skills">Software Skills</p>
+                        <p data-target="#mech-skills">Mechatronic Skills</p>
+                    </div>
+                    <div class="content-skills">
+                        <div data-content id="soft-skills" class="active soft_content">
+                            <h1>Software Skills</h1>
+                            <div class="skills_container">
+                                <div class="s-skill">
+                                    <div class="logo_image_container">
+                                        <img src="images/html5_logo.png" class="logo_image" alt="HTML Logo">
+                                    </div> <br>
+                                    <div class="name-logo">
+                                        <span class="logo_name">HTML</span>
+                                    </div>
+                                </div>
+                                <div class="s-skill">
+                                    <div class="logo_image_container">
+                                        <img src="images/css3_logo.png" class="logo_image" alt="CSS3 Logo">
+                                    </div> <br>
+                                    <div class="name-logo">
+                                        <span class="logo_name">CSS</span>
+                                    </div>
+                                </div>
+                                <div class="s-skill">
+                                    <div class="logo_image_container">
+                                        <img src="images/js.png" class="logo_image" alt="JavaScript Logo">
+                                    </div> <br>
+                                    <div class="name-logo">
+                                        <span class="logo_name">JavaScript</span>
+                                    </div>
+                                </div>
+                                <div class="s-skill">
+                                    <div class="logo_image_container">
+                                        <img src="images/cpp.png" class="logo_image" alt="C++ Logo">
+                                    </div> <br>
+                                    <div class="name-logo">
+                                        <span class="logo_name">C++</span>
+                                    </div>
+                                </div>
+                                <div class="s-skill">
+                                    <div class="logo_image_container">
+                                        <img src="images/github.png" alt="GitHub Logo" class="logo_image">
+                                    </div> <br>
+                                    <div class="name-logo">
+                                        <span class="logo_name">GitHub</span>
+                                    </div>
+                                </div>
+                                <div class="s-skill">
+                                    <div class="logo_image_container">
+                                        <img src="images/jupyternotebook.png" class="logo_image" alt="Jupyter Notebook Logo">
+                                    </div> <br>
+                                    <div class="name-logo">
+                                        <span class="logo_name">Jupyter</span>
+                                    </div>
+                                </div>
+                                <div class="s-skill">
+                                    <div class="logo_image_container">
+                                        <img src="images/anaconda.png" class="logo_image" alt="Anaconda Logo">
+                                    </div> <br>
+                                    <div class="name-logo">
+                                        <span class="logo_name">Anaconda</span>
+                                    </div>
+                                </div>
+                                <div class="s-skill">
+                                    <div class="logo_image_container">
+                                        <img src="images/markdown_logo.png" alt="MarkDown Logo" class="logo_image">
+                                    </div> <br>
+                                    <div class="name-logo">
+                                        <span class="logo_name">MarkDown</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-content id="mech-skills" class="mech_content">
+                            <h1>Mechatronic Skills</h1>
+                            <div class="skills_container">
+                                <div class="m-skill">
+                                    <div class="logo_image_container">
+                                        <img src="images/codesys_logo.png" class="logo_image" alt="CODESYS Logo">
+                                    </div> <br>
+                                    <div class="name-logo">
+                                        <span class="logo_name">CODESYS</span>
+                                    </div>
+                                </div>
+                                <div class="m-skill">
+                                    <div class="logo_image_container">
+                                        <img src="images/factory_io.png" class="logo_image" alt="Factory.IO Logo">
+                                    </div> <br>
+                                    <div class="name-logo">
+                                        <span class="logo_name">Factory I/O</span>
+                                    </div>
+                                </div>
+                                <div class="m-skill">
+                                    <div class="logo_image_container">
+                                        <img src="images/iot.png" class="logo_image" alt="IoT Image">
+                                    </div> <br>
+                                    <div class="name-logo">
+                                        <span class="logo_name">IoT</span>
+                                    </div>
+                                </div>
+                                <div class="m-skill">
+                                    <div class="logo_image_container">
+                                        <img src="images/micropython.png" class="logo_image" alt="MicroPython Logo">
+                                    </div> <br>
+                                    <div class="name-logo">
+                                        <span class="logo_name">MicroPython</span>
+                                    </div>
+                                </div>
+                                <div class="m-skill">
+                                    <div class="logo_image_container">
+                                        <img src="images/arduino_logo.png" alt="Arduino Logo" class="logo_image">
+                                    </div> <br>
+                                    <div class="name-logo">
+                                        <span class="logo_name">Arduino</span>
+                                    </div>
+                                </div>
+                                <div class="m-skill">
+                                    <div class="logo_image_container">
+                                        <img src="images/easyeda.png" class="logo_image" alt="EasyEDA Logo">
+                                    </div> <br>
+                                    <div class="name-logo">
+                                        <span class="logo_name">EasyEDA</span>
+                                    </div>
+                                </div>
+                                <div class="m-skill">
+                                    <div class="logo_image_container">
+                                        <img src="images/modbus.png" class="logo_image" alt="ModBus Logo">
+                                    </div> <br>
+                                    <div class="name-logo">
+                                        <span class="logo_name">ModBus</span>
+                                    </div>
+                                </div>
+                                <div class="m-skill">
+                                    <div class="logo_image_container">
+                                        <img src="images/dopsoft.png" class="logo_image" alt="DOPSoft Image">
+                                    </div> <br>
+                                    <div class="name-logo">
+                                        <span class="logo_name">DOPSoft</span>
+                                    </div>
+                                </div>
+                                <div class="m-skill">
+                                    <div class="logo_image_container">
+                                        <img src="images/plc.png" class="logo_image" alt="PLC Logo Image">
+                                    </div> <br>
+                                    <div class="name-logo">
+                                        <span class="logo_name">PLC</span>
+                                    </div>
+                                </div>
+                                <div class="m-skill">
+                                    <div class="logo_image_container">
+                                        <img src="images/vfd_omron.png" alt="VFD Omron Image" class="logo_image">
+                                    </div> <br>
+                                    <div class="name-logo">
+                                        <span class="logo_name">VFD</span>
+                                    </div>
+                                </div>
+                                <div class="m-skill">
+                                    <div class="logo_image_container">
+                                        <img src="images/autocad.png" class="logo_image" alt="Autocad Logo">
+                                    </div> <br>
+                                    <div class="name-logo">
+                                        <span class="logo_name">AutoCad</span>
+                                    </div>
+                                </div>
+                                <div class="m-skill">
+                                    <div class="logo_image_container">
+                                        <img src="images/inventor.png" class="logo_image" alt="Inventor Logo">
+                                    </div> <br>
+                                    <div class="name-logo">
+                                        <span class="logo_name">Inventor</span>
+                                    </div>
+                                </div>
+                                <div class="m-skill">
+                                    <div class="logo_image_container">
+                                        <img src="images/solidworks.png" class="logo_image" alt="Solidworks Logo">
+                                    </div> <br>
+                                    <div class="name-logo">
+                                        <span class="logo_name">Solidworks</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Porfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="content-section">
+            <h2>Projects</h2>
+            <div class="gallery">
+                <div class="project">
+                    <img src="images/home_automation.jpg" alt="Home Automation Image">
+                    <div class="overlay">
+                        <h3>Proyect 1</h3>
+                        <p>Description of Project 1</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/webp.png" alt="Web Development Image">
+                    <div class="overlay">
+                        <h3>Proyect 2</h3>
+                        <p>Description of Project 2</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/eyetech.jpg" alt="Eye Technology Image">
+                    <div class="overlay">
+                        <h3>Proyect 3</h3>
+                        <p>Description of Project 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Recommendations-->
+    <section class="recommendations" id="recommendations">
+        <div class="content-section">
+            <h2>Recomendations</h2>
+            <div class="column">
+                <div class="recommendation photo-left">
+                    <article class="recommendation-text">
+                        <div class="name">
+                            <h3>Li Wei</h3> 
+                        </div>
+                        <div class="profession">
+                            <h4>Machine Learning Engineer</h4>
+                        </div>
+                        <div class="description">
+                            <p>"Cristian is an exceptional junior software developer. He consistently delivers high-quality code and meets deadlines with precision. With strong problem-solving skills and attention to detail, Cristian tackles challenges head-on. His eagerness to learn and adapt to new technologies is commendable. A great team player, Cristian's excellent communication skills and collaborative nature contribute to a positive work environment. With his dedication and technical proficiency, Cristian has a promising future as a software developer."</p>
+                        </div>
+                    </article>
+                    <div class="photo">
+                        <img src="images/programmer1.jpg" alt="Image from freepik.com">
+                    </div>
+                </div>
+                <div class="recommendation photo-right">
+                    <article class="recommendation-text">
+                        <div class="name">
+                            <h3>Ethan Reynolds</h3>
+                        </div>
+                        <div class="profession">
+                            <h4>Software Engineer</h4>
+                        </div>
+                        <div class="description">
+                            <p>"I highly recommend Cristian as a junior software developer. His coding skills are impressive, and he consistently produces clean, efficient code. Cristian's ability to grasp complex concepts quickly is remarkable. He actively seeks feedback and continuously improves his work. His strong problem-solving skills and teamwork make him a valuable asset. With his enthusiasm, dedication, and talent, Cristian is destined for success in the software development field."</p>
+                        </div>
+                    </article>
+                    <div class="photo">
+                        <img src="images/programmer2.jpg" alt="Image from freepik.com">
+                    </div>
+                </div>
+                <div class="recommendation photo-left">
+                    <article class="recommendation-text">
+                        <div class="name">
+                            <h3>Lena Müller</h3>
+                        </div>
+                        <div class="profession">
+                            <h4>Systems Analyst</h4>
+                        </div>
+                        <div class="description">
+                            <p>"Cristian is an outstanding junior software developer. He consistently demonstrates a strong work ethic and attention to detail. Cristian's coding abilities are top-notch, and he continuously seeks opportunities to learn and grow. His excellent communication skills contribute to effective collaboration with teammates. With his passion for coding and ability to adapt, Cristian is an asset to any software development team."</p>
+                        </div>
+                    </article>
+                    <div class="photo">
+                        <img src="images/programmer3.jpg" alt="Image from freepik.com">
+                    </div>
+                </div>
+                <div class="recommendation photo-right">
+                    <article class="recommendation-text">
+                        <div class="name">
+                            <h3>Park Min-Jun</h3>
+                        </div>
+                        <div class="profession">
+                            <h4>DevOps Engineer</h4>
+                        </div>
+                        <div class="description">
+                            <p>"I wholeheartedly recommend Cristian as a junior software developer. His coding skills are impressive, and he consistently delivers high-quality work. Cristian is a quick learner and adapts easily to new technologies. His collaborative nature and excellent communication skills make him a valuable team member. With his dedication and passion for software development, Cristian has a bright future ahead in this field."</p>
+                        </div>
+                    </article>
+                    <div class="photo">
+                        <img src="images/programmer4.jpg" alt="Image from freepik.com">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Me-->
+    <section class="contact" id="contact">
+        <div class="content-section">
+            <h2>Contact <span>Me</span></h2>
+            <div class="contact-wrapper">
+                <div class="form">
+                    <h3>Contact <span>With Me</span></h3>
+                    <form>
+                        <p>
+                            <label for="full-name">Full Name</label>
+                            <input type="text" name="full-name" id="full-name">
+                        </p>
+                        <p>
+                            <label for="e-mail">E-mail Address</label>
+                            <input type="e-mail" name="e-mail" id="e-mail">
+                        </p>
+                        <p>
+                            <label for="phone-contact">Contact Phone Number</label>
+                            <input type="tel" name="phone" id="phone-contact">
+                        </p>
+                        <p>
+                            <label for="subject">Subject</label>
+                            <input type="text" name="">
+                        </p>
+                        <p class="block">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="10"></textarea>
+                        </p>
+                        <p class="block">
+                            <button type="submit">
+                                Send Massage <i class="fa-solid fa-paper-plane"></i>
+                                <span class="overlay"></span>
+                            </button>
+                        </p>
+                    </form>
+                </div>
+                <div class="form image">
+                    <img src="images/contact.png" alt="Two people getting out of computer and shaking hands">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Bogotá D.C., Colombia
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                info@crisfervel.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <a href="t" class="go-up">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="networks">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="credits">
+            <p>&#169; This Website belongs to Cristian Velasquez</p>
+        </div>
+    </footer>
+
+    <!--Particle.js-->
+    <!--This is only the background dinamic decoration
+        on a library based which I downloaded-->
+    <script src="./particles.min.js"></script>
+    <script src="./app.js"></script>
+
+</body>
+</html>
